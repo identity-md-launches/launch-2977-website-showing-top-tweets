@@ -1,0 +1,16 @@
+{
+  "name": "identitymd-top-posts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static site ranking the top posts about IdentityMD, in dark green with AI-armed frogs.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/",
+    "preview": "node scripts/preview.mjs"
+  }
+}

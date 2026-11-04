@@ -1,0 +1,7 @@
+# Generated dependency and cache directories, at any depth.
+# dist/ is deliberately NOT ignored: it is the committed static export.
+node_modules/
+.cache/
+.npm/
+test/scratch/
+*.tgz

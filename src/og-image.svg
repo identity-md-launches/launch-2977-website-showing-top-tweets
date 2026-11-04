@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b1f14"/>
+  <circle cx="900" cy="315" r="250" fill="#123321"/>
+  <circle cx="820" cy="230" r="80" fill="#5fbf6b"/>
+  <circle cx="980" cy="230" r="80" fill="#5fbf6b"/>
+  <ellipse cx="900" cy="355" rx="200" ry="145" fill="#5fbf6b"/>
+  <rect x="710" y="190" width="380" height="90" rx="45" fill="#06140c"/>
+  <rect x="748" y="226" width="120" height="18" rx="9" fill="#9cf7b0"/>
+  <rect x="932" y="226" width="120" height="18" rx="9" fill="#9cf7b0"/>
+  <path d="M770 390c50 44 210 44 260 0" stroke="#7a3b2e" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <path d="M900 90v60" stroke="#06140c" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="900" cy="84" r="18" fill="#9cf7b0"/>
+  <text x="80" y="270" font-family="system-ui, sans-serif" font-size="76" font-weight="800" fill="#e9f8ee">IdentityMD</text>
+  <text x="80" y="360" font-family="system-ui, sans-serif" font-size="76" font-weight="800" fill="#7bd88f">Top Posts</text>
+  <text x="80" y="430" font-family="system-ui, sans-serif" font-size="30" fill="#a9cbb4">Ranked by likes, reposts and replies</text>
+</svg>

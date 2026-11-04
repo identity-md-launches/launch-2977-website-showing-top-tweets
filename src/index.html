@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IdentityMD Top Posts: the pepe AI feed</title>
+    <meta name="description" content="The top posts about IdentityMD, ranked by engagement. Search, filter by topic and copy any post." />
+    <meta name="theme-color" content="#0b1f14" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IdentityMD Top Posts" />
+    <meta property="og:description" content="The top posts about IdentityMD, ranked by engagement." />
+    <meta property="og:image" content="./og-image.svg" />
+    <meta property="og:image:alt" content="A frog in an AI visor next to the words IdentityMD Top Posts" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IdentityMD Top Posts" />
+    <meta name="twitter:image" content="./og-image.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
+      <defs>
+        <symbol id="frog" viewBox="0 0 64 64">
+          <circle cx="20" cy="20" r="12" fill="var(--tint, #5fbf6b)" />
+          <circle cx="44" cy="20" r="12" fill="var(--tint, #5fbf6b)" />
+          <ellipse cx="32" cy="38" rx="27" ry="20" fill="var(--tint, #5fbf6b)" />
+          <rect x="8" y="14" width="48" height="13" rx="6.5" fill="#06140c" />
+          <rect x="12" y="19" width="16" height="3" rx="1.5" fill="#9cf7b0" />
+          <rect x="36" y="19" width="16" height="3" rx="1.5" fill="#9cf7b0" />
+          <path d="M14 42c6 6 30 6 36 0" stroke="#7a3b2e" stroke-width="4" stroke-linecap="round" fill="none" />
+          <path d="M32 2v8" stroke="#06140c" stroke-width="2.5" stroke-linecap="round" />
+          <circle cx="32" cy="3" r="3" fill="#9cf7b0" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <a class="skip-link" href="#feed">Skip to posts</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="IdentityMD Top Posts, back to top">
+        <svg class="brand-mark" aria-hidden="true" focusable="false"><use href="#frog" /></svg>
+        <span>IdentityMD Top Posts</span>
+      </a>
+      <a class="header-link" href="#about">About the feed</a>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <h1 id="intro-title">The best IdentityMD posts, ranked</h1>
+          <p class="lede">Posts about IdentityMD, sorted by likes, reposts and replies.</p>
+        </div>
+        <svg class="hero-art" viewBox="0 0 220 200" role="img" aria-labelledby="hero-art-title">
+          <title id="hero-art-title">A frog in an AI visor holding a glowing chip</title>
+          <circle cx="110" cy="104" r="92" fill="#123321" />
+          <path d="M30 104h28M162 104h28M110 12v24M110 172v20" stroke="#1f4a31" stroke-width="4" stroke-linecap="round" />
+          <circle cx="78" cy="70" r="30" fill="#5fbf6b" />
+          <circle cx="142" cy="70" r="30" fill="#5fbf6b" />
+          <ellipse cx="110" cy="118" rx="74" ry="54" fill="#5fbf6b" />
+          <rect x="40" y="56" width="140" height="34" rx="17" fill="#06140c" />
+          <rect x="54" y="69" width="44" height="7" rx="3.5" fill="#9cf7b0" />
+          <rect x="122" y="69" width="44" height="7" rx="3.5" fill="#9cf7b0" />
+          <path d="M62 130c18 16 78 16 96 0" stroke="#7a3b2e" stroke-width="9" stroke-linecap="round" fill="none" />
+          <path d="M110 22v18" stroke="#06140c" stroke-width="5" stroke-linecap="round" />
+          <circle cx="110" cy="20" r="7" fill="#9cf7b0" />
+          <path d="M172 150l18-14" stroke="#3d8a4b" stroke-width="12" stroke-linecap="round" />
+          <rect x="180" y="112" width="34" height="34" rx="6" fill="#06140c" stroke="#9cf7b0" stroke-width="3" />
+          <text x="197" y="135" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#9cf7b0">AI</text>
+        </svg>
+      </section>
+
+      <section class="controls" aria-label="Find posts">
+        <div class="field search-field">
+          <label for="search">Search posts</label>
+          <input id="search" type="search" name="q" placeholder="agents, ipfs, frogs" autocomplete="off" spellcheck="false" />
+        </div>
+        <div class="field sort-field">
+          <label for="sort">Sort by</label>
+          <select id="sort" name="sort">
+            <option value="top">Top engagement</option>
+            <option value="new">Newest first</option>
+            <option value="replies">Most replies</option>
+          </select>
+        </div>
+        <div class="chips" role="group" aria-label="Filter by topic" id="chips"></div>
+      </section>
+
+      <section class="feed-section" aria-labelledby="feed-title">
+        <h2 id="feed-title" class="visually-hidden">Ranked posts</h2>
+        <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
+        <ol class="feed" id="feed" tabindex="-1"></ol>
+        <div class="empty" id="empty" hidden>
+          <p>No posts match this search.</p>
+          <button type="button" class="button" id="reset">Show all posts</button>
+        </div>
+        <noscript><p class="note">Turn on JavaScript to load the ranked posts.</p></noscript>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About the feed</h2>
+        <p>Rank is likes plus two points per repost plus replies, so posts people pass along climb fastest.</p>
+        <p>The posts shown here are a sample set, written to demonstrate the layout. Swap in real posts by editing <code>src/posts.js</code> and rebuilding.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built for the IdentityMD contributor network. Frogs in visors, all the way down.</p>
+    </footer>
+
+    <p class="toast" id="toast" role="status" aria-live="polite"></p>
+
+    <script src="./posts.js"></script>
+    <script src="./feed.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
